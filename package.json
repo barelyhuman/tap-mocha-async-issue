@@ -1,0 +1,23 @@
+{
+  "name": "tap-issue-repro",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "tap"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@barelyhuman/prettier-config": "^1.1.0",
+    "@tapjs/mocha-globals": "^1.1.18",
+    "@types/mocha": "^10.0.6",
+    "prettier": "^3.2.5",
+    "tap": "^18.7.0"
+  },
+  "tap": {
+    "plugin": [
+      "@tapjs/mocha-globals"
+    ],
+    "mocha-globals": true
+  }
+}
