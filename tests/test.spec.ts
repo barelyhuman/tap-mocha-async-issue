@@ -32,3 +32,17 @@ describe("test multiple", () => {
     t.ok(true);
   });
 });
+
+describe("test force sync", () => {
+  it("pass", () => {
+    t.same(1, 1);
+  });
+
+  it("pass with thenable", (done) => {
+    new Promise((re) => setTimeout(re, 1000))
+      .then(() => {
+        t.ok(true);
+        done();
+      });
+  });
+});
